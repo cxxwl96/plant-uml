@@ -1,0 +1,127 @@
+@startuml
+/'
+ ' 主题
+ ' author: cxxwl96
+ ' date: 2025-05-29
+ ' 用户指南：https://plantuml.com/sequence-diagram
+ ' 主题文档：https://the-lum.github.io/puml-themes-gallery/themes/index.html
+ ' 皮肤参数：https://plantuml-documentation.readthedocs.io/en/latest/formatting/all-skin-params.html
+ '/
+!$theme = {
+    "FontColor": "#333333",
+    "BackgroundColor": "#333333" ,
+    "BorderColor": "#333333",
+    "color": {
+            "gray": "#C1C1C1",
+            "lightgray": "#f5f5f5",
+            "lightblue": "#e4f1fe",
+            "lightgreen": "#dcedc2"
+    }
+}
+' 整个图的背景色
+skinparam BackgroundColor transparent
+' 整个图的内边界
+skinparam BoxPadding 10
+' 阴影效果
+skinparam shadowing true
+' 线条圆角
+skinparam RoundCorner 7
+' 箭头颜色
+skinparam ArrowColor $theme.FontColor
+' 字体颜色
+skinparam FontColor $theme.FontColor
+' 手绘体
+skinparam handwritten false
+' 标题
+skinparam title {
+    BorderRoundCorner 3
+    FontStyle bold
+    FontSize 20
+}
+' 图片标题
+skinparam caption {
+    FontColor $theme.color.gray
+    FontStyle bold
+    FontSize 12
+    Padding 100
+}
+' 生命线
+skinparam SequenceLifeLine {
+    BorderColor $theme.FontColor
+}
+' 分隔线
+skinparam SequenceDivider {
+	BackgroundColor $theme.BackgroundColor
+    BorderColor $theme.FontColor
+    FontColor $theme.color.lightgray
+    BorderThickness 1.5
+}
+' 时序图盒子，包裹参与者
+skinparam SequenceBox {
+	BackgroundColor $theme.color.lightblue
+    BorderColor $theme.FontColor
+}
+' 便签
+skinparam note {
+    BackgroundColor $theme.color.lightgreen
+    BorderColor $theme.FontColor
+    BorderThickness 1
+}
+' 分组
+skinparam SequenceGroup {
+    HeaderFontColor $theme.color.lightgray
+    BackgroundColor $theme.FontColor
+    BorderColor $theme.FontColor
+    BorderThickness 1
+}
+' 参与者
+skinparam actor {
+    BackgroundColor $theme.BackgroundColor
+    BorderColor $theme.FontColor
+}
+' 参与者
+skinparam participant {
+    BackgroundColor $theme.BackgroundColor
+    BorderColor $theme.FontColor
+    FontColor $theme.color.lightgray
+    BorderThickness 1.5
+}
+' 数据库
+skinparam database {
+    BackgroundColor $theme.BackgroundColor
+    BorderColor $theme.BorderColor
+    BorderThickness 1.5
+}
+' 实体
+skinparam entity {
+    BackgroundColor $theme.BackgroundColor
+    BorderColor $theme.BorderColor
+    BorderThickness 1.5
+}
+' 边界
+skinparam boundary {
+    BackgroundColor $theme.BackgroundColor
+    BorderColor $theme.BorderColor
+    BorderThickness 1.5
+}
+' 控制
+skinparam control {
+    BackgroundColor $theme.BackgroundColor
+    BorderColor $theme.BorderColor
+    BorderThickness 1.5
+}
+' 集合
+skinparam collections {
+    BackgroundColor $theme.BackgroundColor
+    BorderColor $theme.BorderColor
+    FontColor $theme.color.lightgray
+    BorderThickness 1.5
+}
+' 队列
+skinparam queue {
+    BackgroundColor $theme.BackgroundColor
+    BorderColor $theme.BorderColor
+    FontColor $theme.color.lightgray
+    BorderThickness 1.5
+}
+@enduml
